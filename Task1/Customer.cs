@@ -9,16 +9,31 @@ namespace Task1
 {
     public class Customer
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public string Name { get;}
         public string ContactPhone { get; }
         public decimal Revenue { get; }
 
+        /// <summary>
+        /// .ctor
+        /// </summary>
+        /// <param name="name">Name value</param>
+        /// <param name="phone">Contact phone value</param>
+        /// <param name="revenue">Revenue value</param>
         public Customer(string name, string phone, decimal revenue)
         {
             Name = name;
             ContactPhone = phone;
             Revenue = revenue;
         }
+
+        /// <summary>
+        /// Override method
+        /// </summary>
+        /// <param name="format">format show classes</param>
+        /// <returns>String line</returns>
 
         public string ToString(string format)
         {
